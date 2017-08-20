@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2011-08-31"
+title = "My New Best Friend: &ldquo;git merge  --no-ff&rdquo;"
+description = ""
+slug = "my-new-best-friend-git-merge-no-ff"
+tags = []
++++
+
+<p align="justify">I’ve been using Git now for several years.&# 160; Over a year ago I bumped into a great article about <a href="http://nvie.com/posts/a-successful-git-branching-model/">A Successful Git Branching Model</a>.&# 160; It’s a great article in its own right and deserves your attention if you’re using Git.&# 160; If you’re not using Git, you’d better be using some form of distributed version control.&# 160; If you’re not…well…I digress.</p>  <p align="justify">One of the things about Git that I never worried about too much was leveraging branches for various work items.&# 160; Instead, I’d often just do my work on my own local copy and use master.&# 160; Then, when I’d go to push, I’d first pull in changes, rebase, and push.&# 160; (There’s another great article on <a href="http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html">why rebase is bad</a>.)&# 160; The thing about rebase and merge is that they creates a single “branch” that is long and all of the work that you performed for a particular work item or bug or whatever gets lost in the single master branch.&# 160; Enter “git merge –no-ff”.</p>  <p align="justify">The “no-ff” stands for “no fast forward”.&# 160; The whole idea is that each time you do something, you to keep its identity and know that it came as a result of a particular bug.&# 160; If you merge and you do so by fast forwarding, that context has been lost.&# 160; But by appending &quot;--no-ff” onto the merge command, you’ll retain the context and the merge is maintained.&# 160; Of course the end result in terms of the source code is the same, but we <em>know how we got there</em>.&# 160; Kind of like event sourcing, huh?</p>  <p align="justify">If there’s anything you guys know about me, it’s that context is king. Without it, we’re lost because we can’t tell the forest from the trees.&# 160; That’s why from now on, I’m going to be doing lots of merging but without fast forwarding.</p>

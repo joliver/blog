@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2009-02-16"
+title = "Reporting Bounded Context and Performance"
+description = ""
+slug = "reporting-bounded-context-and-performance"
+tags = []
++++
+
+<p>The more I think about having a completely separate reporting context, the more I love the concept.</p> <p>I love the idea that you can have a read-optimized version of your data.&# 160; Obviously this idea is not new, it's the foundation of data warehousing.&# 160; I'm not going down that road quite that far for my situation.&# 160; It's the idea of having reporting be its own bounded context--its own separate sub-domain which is appealing.&# 160; Your write-only, sub-domain bounded context would simply make the changes/updates available to the read-only domain in some fashion.</p> <p>The performance implications of a read-optimized version are staggering.&# 160; First of all, you can have a query (as in command/query separation) that retrieves all necessary data in one fell swoop--one database command--for a specific screen, rather than lots of little ones.&# 160; Since you have to retrieve all of the necessary data for a particular view, you might as well get it all at the same time.</p> <p>In 2002, I was kicking around something very similar to this; I would attempt to get all data for a particular screen as part of a single database query (set of queries in a single command).&# 160; Performance rocked, but the code was a mess because I was going about it completely wrong.&# 160; This was all pre-DDD and the code had a bunch of really nasty side-effects, e.g. welding my business and presentation layers together, etc.&# 160; By having a different bounded context, the separation is maintained.</p> <p>Other performance improvements could obviously be an optimized database table/view structure as well as different indexing strategies, along with the application's caching strategy.&# 160; Finally, the database could be completely replicated--I would probably use something like MySQL Cluster rather than SQL Server Replication in this type of scenario.</p> 

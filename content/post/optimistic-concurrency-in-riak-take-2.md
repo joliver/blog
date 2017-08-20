@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2010-05-31"
+title = "Optimistic Concurrency in Riak: Take 2"
+description = ""
+slug = "optimistic-concurrency-in-riak-take-2"
+tags = []
++++
+
+<p>A few weeks ago I blogged about implementing <a href="/2010/05/cassandrariakdynamo-optimistic.html">optimistic concurrency control using the Dynamo clone</a> storage engines.&# 160; I need to give an update to this technique that is specific to Riak.</p> <p>Riak supports an “if-match” header that allows you to implement OCC out of the box.&# 160; The only quirk with this technique—per my understanding—is that it is single-node based.&# 160; In other words, if I have two concurrent writers that are updating a particular value and they are operating against two different nodes, the “if-match” header doesn’t offer true OCC protection.&# 160; With two concurrent writers against two different nodes we will still end up with two versions of the same value.&# 160; <strong>I need to confirm this 100% with the Basho guys.&# 160; Specifically, I need to verify if this still holds true in a quorum setting: W > N / 2.</strong></p> <p>Supposing the above statement to be true, the easiest way to implement OCC would be to direct writes to a single “master” node.&# 160; But that would severely affect our write performance and would effectively simulate a MySQL master/slave configuration, which we are trying to avoid because we want write availability and write performance.</p> <p>Instead, what if we still adopted the “write to any, read from any” style?&# 160; But instead of directing the writes to any random node, we used a deterministic formula to elect a master on a per-request basis, e.g. a modulo on the primary key.&# 160; In this way, we could easily scale out the writes through this multi-master topology while still maintaining the ability to read from any node.&# 160; Furthermore, we would still realize all of the benefits of optimistic concurrency.</p> <p><a href="/2010/05/somewhere-werner-is-crying.html">Somewhere Werner is smiling.</a>&# 160; [Well, at least he’s not crying.]</p> 

@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2009-07-22"
+title = "TDD: Isn’t It About Time?"
+description = ""
+slug = "tdd-isnt-it-about-time"
+tags = []
++++
+
+<p>I just spent the last six hours in the debugger going through some <em>legacy</em> code because of some problems we had in a production system.&# 160; Okay, maybe the code is only a few years old, but it doesn’t have any tests in it whatsoever, which is what makes it legacy code.</p> <p>The most common argument against TDD (and testing in general) is that it takes too much time.&# 160; That’s a half truth because it does take time.&# 160; But considering the ripple effect that two edge conditions had in some of our production code today and the hours spent isolating, understanding, and fixing the bugs, I would consider a few extra minutes of upfront TDD investment well worth the price.&# 160; That was time that I could have been spending writing more code or expanding business capabilities instead of chasing down a bug.</p> <p>I think the biggest reasons so many are hesitant to get do any kind of automated tests are threefold:</p> <ol> <li>We get our head down and we start programming away and we don’t even want to think about writing tests and killing the momentum. </li> <li>Writing tests is hard because we have to think more.&# 160; If anything, this should be an incentive rather than a deterrent because we’re thinking about the problem from different angles and our comprehension of the problem increases. </li> <li>We don’t understand how and when to use state-based testing and interaction-based testing, nor do we know the difference. </li> </ol> <p>On # 3, I try as hard as I can to make everything a state-based test.&# 160; One technique is to use a <a href="http://www.udidahan.com/2009/06/14/domain-events-salvation/">fully encapsulated domain model</a>.&# 160; My technique is a little different than what Udi outlines in his blog, but the principle remains.</p> <p>In the end, as professionals and craftsman that care about our code, we should be writing tests not only for ourselves, but for those that follow us.</p> 

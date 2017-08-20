@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2008-12-10"
+title = "Don't Forgot svn:externals When Tagging in Subversion"
+description = ""
+slug = "dont-forgot-svnexternals-when-tagging-in-subversion"
+tags = []
++++
+
+<p><strong>The Problem</strong></p> <p>If any of you have ever dealt with external libraries or even your own shared libraries which are used in multiple projects, you've most likely worked with the svn:externals property.&# 160; Yes, there are a few alternatives such as <a href="http://piston.rubyforge.org/">Piston</a>, among others.&# 160; All in all, svn:externals is pretty simple, but it does have one simple, but nasty gotcha when working with tags.</p> <p>The idea behind a tag is to have a snapshot in time of your software such that it can be reconstructed at a known state.&# 160; The externals attribute throws a wrench in the gears because, by default, Subversion pulls the HEAD revision from the external source.&# 160; In other words, everything in your tag will be at a known state <strong>except</strong> the libraries pulled from the external source, which will be at their HEAD or most recent revision.</p> <p><strong>The Workaround</strong></p> <p>One way to solve the problem is to modify the subversion property to point to a particular revision, e.g.:</p> <p>Old:</p> <blockquote> <p>MyDependency <a href="http://3rdpartysource.com/tags/1.2.3/">http://3rdpartysource.com/tags/1.2.3/</a></p> </blockquote> <p>New:</p> <blockquote> <p>MyDependency <strong><u>-r1234 </u></strong><a href="http://3rdpartysource.com/tags/1.2.3/">http://3rdpartysource.com/tags/1.2.3/</a></p> </blockquote> <p>It's not difficult to modify the Subversion attributes, but it can be hard to remember.&# 160; This is one more reason to fully automate your build process using a continuous integration server such as <a href="http://confluence.public.thoughtworks.org/display/CCNET/Welcome+to+CruiseControl.NET">CruiseControl.NET</a> or <a href="http://www.jetbrains.com/teamcity/">TeamCity</a> - but that's a topic for another day.</p> 

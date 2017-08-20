@@ -1,0 +1,10 @@
++++
+type = "post"
+date = "2009-07-22"
+title = "DDD, TDD, BDD, and CQS"
+description = ""
+slug = "ddd-tdd-bdd-and-cqs"
+tags = []
++++
+
+<p>While fixing a few bugs in some legacy code that had no tests didn’t follow DDD principles, I had an epiphany.&# 160; Well, maybe I shouldn’t say it that way.&# 160; I had a few concepts reinforced in my mind regarding the importance of state-based testing, specifically using Behavior-Driven Design techniques.</p> <p>The problems I had were related to business concepts, such as renewing a customer’s subscription.&# 160; Other than the bugs that I fixed, the main problem with the code was that it didn’t follow DDD principles.&# 160; There were no aggregates or entities.&# 160; Everything was a service, yet the complexity merited a domain model. Yuck.</p> <p>With a fully encapsulated domain model, you simply have an aggregate.&# 160; You feed the aggregate events and it publishes events.&# 160; It’s as simple as that.&# 160; No properties and other methods to call other than <em>Consume</em> where an event is fed into the aggregate.</p> <p>By having a fully encapsulated model, we find that CQS, BDD, and DDD can intersect in a powerful way.&# 160; Specifically, if all I can feed the aggregate are messages and all it publishes are messages, everything becomes a state-based test, which then facilitates a BDD style.&# 160; For example:</p> <p>Given: A series of events that put the aggregate into a known state.</p> <p>When: Event XYZ occurs:</p> <p>Then: Events ABC and 123 are published.</p> <p>In a real world scenario:</p> <p>Given: Your account is overdrawn.</p> <p>When: WithdrawFunds</p> <p>Then: NonSufficientFunds</p> <p>Greg mentioned this <a href="http://tech.groups.yahoo.com/group/domaindrivendesign/message/12361">exact scenario in a message on Yahoo Groups</a> a few months back.&# 160; After reading that post, I created this blog entry as an empty draft.&# 160; Encountering those bugs today, which the above scenario would have solved, gave me the opportunity to finish this post.</p> 
