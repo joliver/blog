@@ -1,7 +1,7 @@
 +++
 type = "post"
 date = "2008-12-08"
-title = "The Obligatory \"Hello, World!\" Post"
+title = "The Obligatory Hello, World! Post"
 description = ""
 slug = "the-obligatory-hello-world-post"
 tags = []

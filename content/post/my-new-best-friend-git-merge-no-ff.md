@@ -1,7 +1,7 @@
 +++
 type = "post"
 date = "2011-08-31"
-title = 'My New Best Friend: "git merge  --no-ff"'
+title = "My New Best Friend: git merge  --no-ff"
 description = ""
 slug = "my-new-best-friend-git-merge-no-ff"
 tags = []
