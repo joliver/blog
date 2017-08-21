@@ -19,6 +19,7 @@ theme = "casper"
 	githubName = "joliver"
 	twitterName = "jonathan_oliver"
 	hideHUGOSupport = true
+	hjsStyle = "default"
 
 	[params.social]
 		twitter = "jonathan_oliver"
