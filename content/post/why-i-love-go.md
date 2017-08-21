@@ -16,7 +16,7 @@ The first point is beyond the scope of this post and will be covered in more det
 
 #### The Playing Field
 
-First and foremost, there are a TON of great languages out there. When I started out as a programmer 20+ years ago, I never really understood why people talked about "the right language for the job". Excluding things like gaming and other graphics-intense applications, couldn't you do anything with any language?  Why did the "right language" matter?  Well, it does matter. And it matters a great deal.
+First and foremost, there are a TON of great languages out there. When I started out as a programmer 20+ years ago, I never really understood why people talked about "the right language for the job". Excluding things like gaming and other graphics-intense applications, couldn't you do anything with any language? Why did the "right language" matter? Well, it does matter. And it matters a great deal.
 
 This post is not about why X language is *better* than Y language because that's a naive statement. It is about how Go works for us and how many of the language capabilities enable us to be highly productive. So if you're a big fan of [insert language here], this is not an attack. Instead, this about the right tool for the job. (Could you imagine woodworkers getting into heated arguments about whether a screwdriver or hammer was better?)
 
@@ -72,7 +72,7 @@ This kind of fluency and speed dramatically changes how you work. It enables a h
 
 #### Trade-Offs
 
-Do we miss a few things?  Sure. Generics for one. The language designers have also chosen to be concise in their naming conventions which causes some "double takes" and would probably drive [Uncle Bob Martin](https://twitter.com/unclebobmartin) crazy. But at the end of the day, it's not a huge loss. At the outset of my journey in Go I missed a few other things, but they escape me now because I don't feel any discomfort from the workflow and I feel like I'm able to do more despite being a relative "noob" to the language as compared to my 15 years in .NET.
+Do we miss a few things? Sure. Generics for one. The language designers have also chosen to be concise in their naming conventions which causes some "double takes" and would probably drive [Uncle Bob Martin](https://twitter.com/unclebobmartin) crazy. But at the end of the day, it's not a huge loss. At the outset of my journey in Go I missed a few other things, but they escape me now because I don't feel any discomfort from the workflow and I feel like I'm able to do more despite being a relative "noob" to the language as compared to my 15 years in .NET.
 
 #### Conclusion
 

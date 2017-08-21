@@ -29,7 +29,7 @@ The paradigm really comes from the heritage of each OS. \*NIX-based OSes were mu
 
 
 #### Security
-Okay, I didn't think I'd talk about security, but it is worth mentioning that an element of **TRUST** has been lost with Windows due to recent revelations about the NSA. How sure are you that there's no NSA backdoor in Windows?  The Linux Kernel is open source. Patches are reviewed and scrutinized by a multi-national group of individuals.
+Okay, I didn't think I'd talk about security, but it is worth mentioning that an element of **TRUST** has been lost with Windows due to recent revelations about the NSA. How sure are you that there's no NSA backdoor in Windows? The Linux Kernel is open source. Patches are reviewed and scrutinized by a multi-national group of individuals.
 
 
 #### Package Management

@@ -87,7 +87,7 @@ There was a movement a few years back called ALT.NET. The movement was all about
 
 There are so many great solutions out there. To assume that Microsoft has ordained The One True Way is absurd. If that was the case, we'd all still be using visual designers in Visual Studio to drag and drop button and link elements onto a WebForm surface and we'd wire up the button and rely on ASP.NET ViewState to help insulate us from the "horrors" of scary HTTP. The day I got rid of the last WebForm from one of my deployed code bases was a day of glorious celebration. Literally.
 
-(And who ever thought "web controls" was a good idea?  Apparently I did because I drank the Kool-Aid and embraced it to the fullest. It bit me hard. Ever seen a 2MB+ ViewState?)
+(And who ever thought "web controls" was a good idea? Apparently I did because I drank the Kool-Aid and embraced it to the fullest. It bit me hard. Ever seen a 2MB+ ViewState?)
 
 [NOTE: When I was composing this post, it was originally titled, "Why I Left .NET", meaning the entire .NET ecosystem. The title felt a little short I updated it to be "Why I Left the .NET Framework". I consider .NET to be an ecosystem including all tools, projects, platforms, organizations, and groups of developers. This is why some elements of the wider .NET community come under fire in my post.]
 
@@ -111,13 +111,13 @@ As a .NET developer, when you start a new project there are a few things you'll 
 * Associate the Entity Framework with the solution (typically for projects created after 2010)
 * Start designing your database and your ActiveRecord entities.
 
-This isn't the right way to code in most cases. Sure it may work in some scenarios, but as a "default architecture" it's not where you want to be. Why have we made any technology choices before we even understand the problem domain?  This literally puts the cart before the horse.
+This isn't the right way to code in most cases. Sure it may work in some scenarios, but as a "default architecture" it's not where you want to be. Why have we made any technology choices before we even understand the problem domain? This literally puts the cart before the horse.
 
 The Microsoft ecosystem encourages everyone to utilize SQL Server. It's so incredibly easy to interact with SQL Server from within Visual Studio or using SQL Management Studio (and its predecessor, SQL Query Analyzer). This database-centric focus is part of the ordained and One True Way. It gets you hooked on Microsoft even more. Vendor lock-in is always good for the vendor.
 
-Why do we develop this way?  Why aren't we considering the **behavior** of the application more than how it's stored?  All of my projects now utilize a JSON-based key/value store. With this capability, I can choose any storage engine I want including SQL Server, Oracle, PostgreSQL, MySQL, Cassandra, CouchDB, CouchBase, Dynamo, SimpleDB, S3, Riak, BerkeleyDB, Firebird, Hypertable, RavenDB, Redis, Tokyo Cabinet/Tyrant, Azure Blobs, plaintext JSON files on the file system, etc., etc., etc. All of a sudden, we can start choosing a storage engine based upon its merits rather than just familiarity.
+Why do we develop this way? Why aren't we considering the **behavior** of the application more than how it's stored? All of my projects now utilize a JSON-based key/value store. With this capability, I can choose any storage engine I want including SQL Server, Oracle, PostgreSQL, MySQL, Cassandra, CouchDB, CouchBase, Dynamo, SimpleDB, S3, Riak, BerkeleyDB, Firebird, Hypertable, RavenDB, Redis, Tokyo Cabinet/Tyrant, Azure Blobs, plaintext JSON files on the file system, etc., etc., etc. All of a sudden, we can start choosing a storage engine based upon its merits rather than just familiarity.
 
-Aside: Ever run SQL Server in the cloud on AWS RDS?  Don't. Sure it'll work, but some of the simplest of things like replication don't exist. The docs are littered with references to capabilities of SQL Server that don't work within AWS RDS.
+Aside: Ever run SQL Server in the cloud on AWS RDS? Don't. Sure it'll work, but some of the simplest of things like replication don't exist. The docs are littered with references to capabilities of SQL Server that don't work within AWS RDS.
 
 ### Conclusion
 
