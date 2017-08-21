@@ -5,6 +5,7 @@ title = "Why I Avoid Outsourcing"
 description = ""
 slug = "why-i-avoid-outsourcing"
 tags = []
+draft = true
 +++
 
 Why I Avoid Outsourcing:

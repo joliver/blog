@@ -5,6 +5,7 @@ title = "I Am Better Than You"
 description = ""
 slug = "technical-extinction"
 tags = []
+draft = true
 +++
 
 We love to divide ourselves into cultures and groups. We love to place things in boxes (both real and imagined) and to categorize them. These camps provide us with a measure of safety where certain elements and conditions are a given. Belonging to a culture can give us a sense of identity, e.g. "I'm a doctor", "I'm a programer", or "I'm a Democrat", etc. Historicaly, these cultures helped us survive. But if we're not careful, these same cultures can kill us.
