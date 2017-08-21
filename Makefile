@@ -1,10 +1,10 @@
 #!/usr/bin/make -f
 
 build: clean
-	hugo
+	@hugo
 
 clean:
 	@rm -rf public
 
 server:
-	hugo server
+	@hugo server
