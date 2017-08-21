@@ -23,3 +23,7 @@ theme = "casper"
 
 	[params.social]
 		twitter = "jonathan_oliver"
+
+[blackfriday]
+	smartypants = false
+	smartDashes = false
