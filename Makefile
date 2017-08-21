@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
 
-server:
-	hugo server
+build: clean
+	hugo
 
 clean:
-	rm -rf public
+	@rm -rf public
+
+server:
+	hugo server
