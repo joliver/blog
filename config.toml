@@ -1,4 +1,4 @@
-BaseUrl = "https://blog.jonathanoliver.com/"
+BaseUrl = "http://blog.jonathanoliver.com/"
 LanguageCode = "en-US"
 Title = "Jonathan Oliver"
 paginate = 10
