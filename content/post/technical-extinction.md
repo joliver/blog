@@ -26,7 +26,7 @@ Interestingly, whenever someone comes into our group, we trumpt and celebrate th
 These groups originated based upon a specific need, whether physical, emotional, social, spiritual, or otherwise--all of which can typically be found on [Maslow's Hierarchy of Needs](http://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs). Because of this, any questioning, compliants, or other introspection into the group is often viewed as a direct assault on the core tenets of that group and will thus be vehemently opposed.  Many times these disagreements arise internally, which results in splinter groups that break away from the parent to form their own faction.  This is also why those who leave are branded apostates and labeled traitors to the original cause.
 
 Here's a poster in my office that I quite enjoy:
-![](/content/images/2014/Jul/despair.jpg)
+![](/images/2014/Jul/despair.jpg)
 
 "Group think" can be awesome--especially when people of divergent views, backgrounds, experiences, and opinions can come together for a common good and can create together a shared vision working toward a mutual goal. But "group think" can be incredibly dangerious when we live in an echo chamber because it doesn't bring any new understanding or insight to the table. Instead, "group think" often lets us pat ourselves on the back telling us how great we are.
 

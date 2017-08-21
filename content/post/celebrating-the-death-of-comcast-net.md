@@ -49,4 +49,4 @@ Maybe it's time for Comcast to wake up and stop focusing on next quarter's earni
 
 Like Blockbuster, Comcast has proven themselves to be a poor steward of our trust. If Comcast will not learn to become our partner and advocate, it will burn in the fire of obsolescence. And when it burns, we the consumers we will dance in the streets to celebrate its demise.
 
-![](/content/images/2014/Mar/vj_eisenstadt-1.jpg)
+![](/images/2014/Mar/vj_eisenstadt-1.jpg)
