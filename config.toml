@@ -20,6 +20,7 @@ theme = "casper"
 	twitterName = "jonathan_oliver"
 	hideHUGOSupport = true
 	hjsStyle = "default"
+	logo = "images/tux.png"
 
 	[params.social]
 		twitter = "jonathan_oliver"
