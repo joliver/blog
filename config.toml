@@ -1,4 +1,4 @@
-BaseUrl = "http://blog.jonathanoliver.com/"
+BaseUrl = "https://blog.jonathanoliver.com/"
 LanguageCode = "en-US"
 Title = "Jonathan Oliver"
 paginate = 10
@@ -15,7 +15,7 @@ theme = "casper"
 	cover = "images/cover.jpg"
 	author = "Jonathan Oliver"
 	authorlocation = "Utah, USA"
-	authorwebsite = "https://blog.jonathanoliver.com"
+	authorwebsite = "https://blog.jonathanoliver.com/"
 	githubName = "joliver"
 	twitterName = "jonathan_oliver"
 	hideHUGOSupport = true
