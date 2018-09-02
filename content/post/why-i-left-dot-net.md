@@ -43,10 +43,10 @@ Arguably one of the best things about .NET was that it was the birthplace of CQR
 
 ### The Bad
 
-With the good stuff out of the way, let's look at what's wrong and why I left the .NET Framework. The thing that excites me the most about [my recent development platform migration](http://blog.jonathanoliver.com/why-i-love-go/) is that I can take a lot of the best parts with me while leaving the bad stuff (as found below) behind.
+With the good stuff out of the way, let's look at what's wrong and why I left the .NET Framework. The thing that excites me the most about [my recent development platform migration](/why-i-love-go/) is that I can take a lot of the best parts with me while leaving the bad stuff (as found below) behind.
 
 #### Windows
-[As covered previously](http://blog.jonathanoliver.com/why-i-left-windows/), Windows is not a good player when it comes to network-based server software. One other really big problem I see with Windows is that traditional Windows devs are typically only good at Windows and get lost very quickly outside of their comfort zones, which is not true for Linux devs. Computing is **SO** much bigger than just Windows. One problem of devs only being capable on a single OS is that it inevitably leads to the proliferation of Windows. In other words, Windows begets Windows. There's no way to break the cycle.
+[As covered previously](/why-i-left-windows/), Windows is not a good player when it comes to network-based server software. One other really big problem I see with Windows is that traditional Windows devs are typically only good at Windows and get lost very quickly outside of their comfort zones, which is not true for Linux devs. Computing is **SO** much bigger than just Windows. One problem of devs only being capable on a single OS is that it inevitably leads to the proliferation of Windows. In other words, Windows begets Windows. There's no way to break the cycle.
 
 \*NIX guys on the other hand are typically familiar with multiple operating systems (Linux, Unix, OSX, Windows, etc.), the inner workings of an OS, various distributions (Debian- and Fedora-based), window managers (lowercase "w"), desktop managers, file systems, package management, compiling, recompiling, repackaging, command line "fu", and the list goes on and on.
 
